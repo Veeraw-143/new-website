@@ -1,0 +1,192 @@
+/* ---------- Global Styles ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* ---------- Navigation Bar ---------- */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #4a78ff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #4a78ff;
+}
+
+/* Mobile menu icon */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+    height: 100vh;
+    background: linear-gradient(120deg, #4a78ff, #6aa9ff);
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.cta {
+    background: white;
+    color: #4a78ff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #ccc;
+}
+
+/* ---------- Sections ---------- */
+.section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* scroll-fade animation */
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---------- Projects Cards ---------- */
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 12px 25px rgba(0,0,0,0.15);
+}
+
+/* ---------- Contact Form ---------- */
+form input,
+form textarea {
+    width: 90%;
+    max-width: 450px;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background: #4a78ff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #345bd1;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        left: 0;
+        padding: 20px 0;
+        gap: 20px;
+        text-align: center;
+        border-top: 1px solid #ddd;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}

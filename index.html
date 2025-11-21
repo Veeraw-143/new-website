@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Website</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MySite</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="section hero">
+        <h1>Welcome to My Interactive Website</h1>
+        <p>Scroll down to explore cool animations and effects.</p>
+        <button class="cta">Get Started</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section hidden">
+        <h2>About Me</h2>
+        <p>This section fades in when you scroll to it.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section hidden">
+        <h2>Projects</h2>
+        <div class="cards">
+            <div class="card">Project 1</div>
+            <div class="card">Project 2</div>
+            <div class="card">Project 3</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section hidden">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required /><br>
+            <input type="email" placeholder="Email" required /><br>
+            <textarea placeholder="Message"></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
